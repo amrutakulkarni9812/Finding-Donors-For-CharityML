@@ -18,3 +18,11 @@ visuals.py
 finding_donors.html provides python notebook in html format.
 ## Project Motivation
 The goal is to help a non profit organization by constructing a model that accurately predicts whether an individual makes more than $50,000. This will help the organization to better understand how large of a donation to request, or whether or not they should reach out to begin with.
+## Data Preparation
+I applied logarithmic transformations to the highly-skewed feature distributions so that the very large and very small values do not negatively affect the performance of a learning algorithm. I also applied normalization to the features to ensure that each feature is treated equally when applying supervised learners. I converted categorical variables to binaries because typically the learning algorithms expect input to be numeric.
+## Modeling, Optimization and Feature extraction
+I applied and evaluated performance of these three supervised learning algorithms: Decision Tree, SVm and KNN.  I measured F score, training and prediction time for all of them to evaluate performance. I applied grid search to optimize the best of the three models. I also implemented AdaBoostClassifier model to find out most important features in predictiong the output variable. Reran the model on only the five most significant features.
+## Result
+KNN yielded the best F score although it took longest time for prediction. Grid search optimization improved the f score from 0.64 TO 0.65. The model on reduced data (only 5 most significant features) reduced F score from 0.65 to 0.58.
+## Acknowledgement
+Thanks to Udacity Data Scientist Nanodegree content creators for providing us the opportunity to work on this project.
