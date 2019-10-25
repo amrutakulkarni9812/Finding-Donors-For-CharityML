@@ -8,10 +8,10 @@ The dataset for this project originates from the [UCI Machine Learning Repositor
 ## File Description
 ### Readme
 This file provides high level overview of the work done in project.
-### Code
-finding_donors.ipynb consists of the code required to load, clean, explore and visualize the data and answer the questions.
 ### Data
 census.csv
+### Code
+finding_donors.ipynb consists of the code required to load, clean, explore and visualize the data and answer the questions.
 ### Supplementary
 visuals.py 
 ### HTML Report
